@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background_color_one: rgba(245, 229, 226, 0.3);
+    --background_color_two: rgb(0, 0, 0);
+    --background_color_three: #e5b3ac;
+
+    --border_color_one: rgba(0, 0, 0, 0.1);
+
+    --text_color_one: #464646;
+}
+
+html {
+    width: 100%;
+    height: auto;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.email_container {
+    max-width: 37.5rem;
+    border-left: 1px solid var(--border_color_one);
+    border-right: 1px solid var(--border_color_one);
+}
+
+.email_container .header_container {
+    width: 100%;
+    height: 8.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_container .store_logo {
+    width: 9rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--background_color_two);
+}
+
+.store_logo img {
+    display: block;
+    width: 7rem;
+    height: auto;
+    padding: 1.5rem;
+}
+
+.email_container .main_container {
+    width: 100%;
+    background: var(--background_color_one);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container .main_content {
+    width: 80%;
+    height: 40.4375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.main_content p:first-child {
+    font-weight: 700;
+    font-size: 1.375rem;
+}
+
+.main_content p:nth-child(2) {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.main_content a {
+    text-decoration: none;
+    color: var(--text_color_one);
+    background: var(--background_color_three);
+    padding: 1rem;
+}
+
+.image_gallery img {
+    width: 15.75rem;
+    height: 9.9375rem;
+}
+
+.email_container .gallery_container {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery_container .gallery_content {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.gallery_content .image_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer {
+    margin-top: 40px;
+    background: var(--background_color_one);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+footer .socials {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+footer .footer_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+}
